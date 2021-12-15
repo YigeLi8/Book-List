@@ -3,7 +3,7 @@ main file
 '''
 
 
-def fileConversion():
+def bookListFileConversion():
     #Format of the library files
     # <book name>#<number of copies>#<restricted>
 
@@ -11,11 +11,6 @@ def fileConversion():
     blOpen = open("booklist.txt", "r")
     #bookList -> Array of booklist
     bookList = []
-
-    #llOpen -> Open the librarylog.txt
-    llOpen = open("librarylog-1.txt", "r")
-    #libraryLog -> Array of library log
-    libraryLog = []
 
     s = blOpen.readline()
     s = s.rstrip("\n")
@@ -27,6 +22,17 @@ def fileConversion():
       s = blOpen.readline()
       s = s.rstrip("\n")
 
+    print(bookList)
+    return bookList
+
+
+def libraryLogFileConversion():
+
+    #llOpen -> Open the librarylog.txt
+    llOpen = open("librarylog-1.txt", "r")
+    #libraryLog -> Array of library log
+    libraryLog = []
+
     s = llOpen.readline()
     s = s.rstrip("\n")
 
@@ -37,8 +43,8 @@ def fileConversion():
       s = llOpen.readline()
       s = s.rstrip("\n")
 
-    print (bookList)
-    print (" ")
-    print (libraryLog)
+    print(libraryLog)
+    return libraryLog
 
-fileConversion()
+bookListFileConversion()
+libraryLogFileConversion()

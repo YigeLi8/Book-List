@@ -1,0 +1,8 @@
+- Sort booklist and librarylog into two lists
+
+- Checks TRUE or FALSE for restriction of a certain book,
+  stores index and put through if statement for 7 or 28 days
+
+- from librarylog, access borrowing dates, returning dates etc, if late, store into temp variable
+
+- with the temp variable also count amount of days late $5/day(restricted) $1/day(non restricted) penalty variable
