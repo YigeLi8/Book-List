@@ -8,7 +8,7 @@ def bookListFileConversion():
     # <book name>#<number of copies>#<restricted>
 
     #blOpen -> Open the booklist.txt
-    blOpen = open("booklist.txt", "r")
+    blOpen = open("booklist-2.txt", "r")
     #bookList -> Array of booklist
     bookList = []
 
@@ -29,7 +29,7 @@ def bookListFileConversion():
 def libraryLogFileConversion():
 
     #llOpen -> Open the librarylog.txt
-    llOpen = open("librarylog-1.txt", "r")
+    llOpen = open("librarylog-3.txt", "r")
     #libraryLog -> Array of library log
     libraryLog = []
 
